@@ -1,0 +1,391 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	padding: 0
+	margin: 0
+	font-family: "Roboto", Helvetica, Arial, sans-serif
+
+	.head			
+		background: url(../img/bg/bg.jpg) no-repeat
+		width: 100%
+		.container-header
+			padding-top: 37px
+			display: grid
+			grid-template-columns: 33.33333333333333% 33.33333333333333% 33.33333333333333%
+			text-align: center
+			.logo
+				img
+					width: 118px
+					height: 92px
+			.contact
+				line-height: 30px
+				p
+					color: #0a9344
+					text-shadow: 1px 1px 1px rgba(0,0,0,.75)
+		.container-menu
+			margin: 0 auto
+			width: 1050px
+			ul
+				border-radius: 10px
+				box-shadow: 1px 1px 1px rgba(0,0,0,.75)
+				list-style: none
+				background-color: #0d9344
+				margin: 0
+				padding-left: 0
+				height: 57px
+				li
+					display: inline-block
+					padding-left: 14.8px
+					padding-right: 14.8px
+					border-right: 1px solid #f2f5b3
+					margin-top: 15px
+					a
+						text-decoration: none
+						font-size: 18px
+						text-transform: uppercase
+						color: #f2f5b3
+				li:hover
+					border-radius: 10px
+					background-color: #f2f5b3
+					a
+						color: #0d9344
+		.container-info
+			width: 100%
+			max-width: 1200px
+			margin: 0 auto
+			.container
+				display: grid
+				grid-template-columns: 50% 50%
+				.info
+					margin-top: 5%
+					text-transform: uppercase
+					list-style-position: inside
+					text-shadow: 1px 1px 1px rgba(0,0,0,.75)
+					li
+						p
+							position: relative
+							margin-left: 11%
+							margin-top: -18.5%
+					li::before
+						text-shadow: 1px 1px 1px rgba(0,0,0,.75)
+				.img
+					img
+						width: 630px
+						height: 313px
+		.container-icon
+			background: url(../img/bg/bg2.png), linear-gradient(to bottom, #EAF8FB, #0b63ad)
+			width: 100%
+			min-width: 1200px
+			padding-top: 10%
+			padding-bottom: 10%
+			ul
+				list-style: none
+				display: grid
+				grid-template-columns: 16% 16% 16% 16% 16% 16%
+				text-align: center
+				li
+					div
+						display: inline-block
+						width: 114px
+						height: 88px
+						margin-bottom: 8px
+					.icon1
+						background: url(../img/icon/ico.png) no-repeat 30px 0
+					.icon2
+						background: url(../img/icon/ico.png) no-repeat -170px 0
+					.icon3
+						background: url(../img/icon/ico.png) no-repeat -370px 0
+					.icon4
+						background: url(../img/icon/ico.png) no-repeat -555px 0
+					.icon5
+						background: url(../img/icon/ico.png) no-repeat -760px 0
+					.icon6
+						background: url(../img/icon/ico.png) no-repeat -940px 0
+					label
+						font-size: 16px
+						text-transform: uppercase
+						color: #fff
+						text-shadow: 1px 1px 1px rgba(0,0,0,.75)
+	.main
+		width: 100%
+		padding-top: 5%
+		padding-bottom: 12%
+		.intro
+			text-align: center
+			padding-bottom: 7%
+			text-transform: uppercase
+			color: #0d9344
+			position: relative
+			font-size: 32px
+		.intro::after
+			content: ''
+			display: block
+			width: 164px
+			height: 27px
+			background: url(../img/other/sprt.png) no-repeat 0 -508px
+			position: absolute
+			left: 50%
+			margin-left: -82px
+				
+		.container-catalog
+			margin: 0 auto
+			width: 100%
+			max-width: 1200px
+			position: relative	
+			margin-bottom: 5%
+			.vegetables-cap
+				z-index: 3
+				.cap2
+					margin-left: -6.5%
+			.vegetables-pom
+				z-index: 3
+				.pom2
+					margin-left: 83%
+			.catalog
+				position: relative
+				margin-top: -83%
+				z-index: 1
+				.product
+					z-index: 2
+					border-radius: 10px
+					background-color: #f4f4f6
+					box-shadow: 4px 6px 54px 3px rgba(0,0,0,.39)
+					border: solid 1px #cbcbcb
+					display: grid
+					grid-template-columns: 20% 80%
+					margin-bottom: 5%
+					.img
+						margin-left: 15%
+						margin-top: 22%
+						img
+							width: 244px
+							height: 227px
+					.description
+						position: relative
+						margin-left: 5%
+						.title
+							margin-left: 5%
+							font-size: 32px
+							color: #0d9344
+						ul
+							list-style: none
+							li
+								display: block
+								font-size: 16px
+								color: #2c2c2c
+								label
+									margin-left: 15px
+						.price
+							margin-right: 5%
+							margin-bottom: 10px
+							position: absolute
+							bottom: 0
+							right: 0
+							.availability
+								margin-left: 33%
+								background-color: #0d9344
+								text-align: center
+								width: 150px
+								border-radius: 10px
+								p
+									font-size: 16px
+									font-weight: bold
+									text-transform: uppercase
+									color: #f2f5b3
+							.price-text
+								margin-left: 33%
+								right: 0
+								font-weight: bold
+								text-transform: uppercase
+								color: #0d9344
+								font-size: 18px
+								span
+									font-size: 42px
+							button
+								border-radius: 10px
+								background-color: #0663b1
+								width: 238px
+								height: 46px
+								font-size: 24px
+								text-transform: uppercase
+								color: #fff
+			button
+				display: block
+				margin: 0 auto
+				text-align: center
+				width: 458px
+				height: 44px
+				border-radius: 10px
+				background-color: #0d9344
+				box-shadow: 4px 6px 54px 3px rgba(0,0,0,.39)
+				font-size: 20px
+				text-transform: uppercase
+				color: #f2f5b3	
+		.container-certificates
+			.intro
+				font-size: 32px
+				text-transform: uppercase
+				color: #065ca5
+				position: relative
+			.intro::after
+				content: ''
+				display: block
+				width: 164px
+				height: 27px
+				background: url(../img/other/sprt.png) no-repeat 0 -508px
+				position: absolute
+				left: 50%
+				margin-left: -82px
+			.owl-carousel
+				.item
+					margin-left: 22.5%
+					img
+						height: 300px
+						width: 250px
+				.owl-nav
+					position: relative
+					margin-top: -13%
+					.owl-prev
+						z-index: 1
+						width: 40px
+						height: 40px
+						border-radius: 10em
+						background-color: #b2b2b2
+						color: #fff
+						font-size: 16px
+						margin-left: 6%
+					.owl-next
+						z-index: 1
+						width: 40px
+						height: 40px
+						border-radius: 10em
+						background-color: #b2b2b2
+						color: #fff
+						font-size: 16px
+						float: right
+						margin-right: 6%
+	.footer
+		overflow: hidden
+		width: 100%
+		background-color: #0663b1
+		padding-bottom: -50%		
+		.container-gallery
+			margin: 0 auto
+			max-width: 1200px
+			position: relative
+			.container
+				z-index: 3
+				.intro-gallery
+					padding-top: 5%
+					text-transform: uppercase
+					text-align: center
+					color: #fff
+					font-size: 30px
+					line-height: 1.3em
+					font-weight: 500
+					position: relative
+					margin-bottom: 50px
+				.intro-gallery::after
+					content: ''
+					display: block
+					width: 164px
+					height: 27px
+					background: url(../img/other/sprt.png) no-repeat 0 -468px
+					position: absolute
+					bottom: -32px
+					left: 50%
+					margin-left: -82px
+				.video
+					text-align: center
+					div
+						display: inline-block
+						width: 200px
+						height: 200px
+						background-color: #fff
+						margin-right: 3%
+						border-radius: 10px
+						iframe
+							padding: 10px
+							width: 200px
+							height: 200px
+				.gallery
+					text-align: center
+					z-index: 2
+					max-width: 1200px
+					img
+						display: inline-block
+						width: 220px
+						height: 220px
+						background-color: #fff
+						margin-right: 3%
+						border-radius: 10px
+						z-index: 2
+						margin-top: 3%
+			.vegetables-per4
+				z-index: 0
+				left: -11%
+				position: absolute
+				bottom: -20%
+			.vegetables-per2
+				z-index: 0
+				position: absolute
+				right: 0
+				right: -6.2%
+		.container-map
+			margin-top: 7%
+			background-color: #fff
+			padding-bottom: 5%
+			.intro
+				padding-top: 5%
+				text-align: center
+				padding-bottom: 7%
+				text-transform: uppercase
+				color: #0d9344
+				position: relative
+				font-size: 32px
+			.intro::after
+				content: ''
+				display: block
+				width: 164px
+				height: 27px
+				background: url(../img/other/sprt.png) no-repeat 0 -508px
+				position: absolute
+				left: 50%
+				margin-left: -82px
+			.container
+				display: grid
+				grid-template-columns: 40% 60%
+				.info
+					margin-left: -13%
+					padding-left: 5%
+					padding-right: 5%
+					padding-top: 10%
+					padding-bottom: 3%
+					border: 2px solid #65A300
+					border-radius: 10px
+				.map
+					margin-top: 20%
+					margin-left: 3%
+					img
+						height: 400.7px
+						width: 650px
+		.vegetables-pom2
+			margin-top: -7%
+			margin-left: -5%
+			z-index: -1
+			img
+				height: 290px
+		.vegetables-per
+			margin-left: 94%
+			margin-top: -20%
+			margin-bottom: 1%
+			z-index: -1
+			img
+				height: 150px
+
+
+
+				
+@import "media"
