@@ -8,9 +8,11 @@ body
 	font-family: "Roboto", Helvetica, Arial, sans-serif
 
 	.head			
-		background: url(../img/bg/bg.jpg) no-repeat
+		background: url(../img/bg/bg.jpg) no-repeat -190px 0px
 		width: 100%
 		.container-header
+			margin: 0 auto
+			max-width: 1200px
 			padding-top: 37px
 			display: grid
 			grid-template-columns: 33.33333333333333% 33.33333333333333% 33.33333333333333%
@@ -26,7 +28,7 @@ body
 					text-shadow: 1px 1px 1px rgba(0,0,0,.75)
 		.container-menu
 			margin: 0 auto
-			width: 1050px
+			width: 1000px
 			ul
 				border-radius: 10px
 				box-shadow: 1px 1px 1px rgba(0,0,0,.75)
@@ -53,7 +55,7 @@ body
 						color: #0d9344
 		.container-info
 			width: 100%
-			max-width: 1200px
+			min-width: 1200px
 			margin: 0 auto
 			.container
 				display: grid
@@ -67,7 +69,7 @@ body
 						p
 							position: relative
 							margin-left: 11%
-							margin-top: -18.5%
+							margin-top: -16%
 					li::before
 						text-shadow: 1px 1px 1px rgba(0,0,0,.75)
 				.img
@@ -75,12 +77,13 @@ body
 						width: 630px
 						height: 313px
 		.container-icon
-			background: url(../img/bg/bg2.png), linear-gradient(to bottom, #EAF8FB, #0b63ad)
 			width: 100%
-			min-width: 1200px
+			background: url(../img/bg/bg2.png) no-repeat -32px 0px, linear-gradient(to bottom, #F7FCFF, #0b63ad)
 			padding-top: 10%
 			padding-bottom: 10%
 			ul
+				max-width: 1200px
+				margin: 0 auto
 				list-style: none
 				display: grid
 				grid-template-columns: 16% 16% 16% 16% 16% 16%
@@ -112,99 +115,99 @@ body
 		width: 100%
 		padding-top: 5%
 		padding-bottom: 12%
+		background: url(../img/vegetables/cap2.png) no-repeat 0px 100px, url(../img/vegetables/pom2.png) no-repeat 1000px 650px
 		.intro
 			text-align: center
-			padding-bottom: 7%
+			padding-bottom: 4%
 			text-transform: uppercase
 			color: #0d9344
-			position: relative
 			font-size: 32px
+			max-width: 1200px
+			margin: 0 auto
 		.intro::after
+			margin: 0 auto
 			content: ''
 			display: block
 			width: 164px
 			height: 27px
 			background: url(../img/other/sprt.png) no-repeat 0 -508px
-			position: absolute
 			left: 50%
-			margin-left: -82px
-				
+			padding: 0	
 		.container-catalog
+			position: relative
+			z-index: 2
 			margin: 0 auto
 			width: 100%
-			max-width: 1200px
-			position: relative	
-			margin-bottom: 5%
-			.vegetables-cap
-				z-index: 3
-				.cap2
-					margin-left: -6.5%
-			.vegetables-pom
-				z-index: 3
-				.pom2
-					margin-left: 83%
+			max-width: 928px
 			.catalog
-				position: relative
-				margin-top: -83%
-				z-index: 1
 				.product
-					z-index: 2
 					border-radius: 10px
 					background-color: #f4f4f6
 					box-shadow: 4px 6px 54px 3px rgba(0,0,0,.39)
 					border: solid 1px #cbcbcb
 					display: grid
-					grid-template-columns: 20% 80%
-					margin-bottom: 5%
+					grid-template-columns: 30% 70%
+					width: 928px
+					height: 271px
+					margin-bottom: 60px
 					.img
-						margin-left: 15%
-						margin-top: 22%
+						text-align: center
+						margin-top: 8%
 						img
 							width: 244px
 							height: 227px
+							padding-left: 0px
 					.description
 						position: relative
-						margin-left: 5%
 						.title
+							text-transform: uppercase
+							margin-bottom: 1px
+							margin-top: 10px
 							margin-left: 5%
 							font-size: 32px
 							color: #0d9344
 						ul
 							list-style: none
+							line-height: 20px
 							li
 								display: block
 								font-size: 16px
 								color: #2c2c2c
+								img
+									width: 20px
+									height: 20px
 								label
 									margin-left: 15px
 						.price
-							margin-right: 5%
-							margin-bottom: 10px
 							position: absolute
-							bottom: 0
+							margin-right: 1%
+							bottom: -10px
 							right: 0
 							.availability
-								margin-left: 33%
+								position: absolute	
+								right: 0	
 								background-color: #0d9344
 								text-align: center
-								width: 150px
-								border-radius: 10px
+								border-radius: 10px/6px
+								width: 142px
+								height: 25px
+								bottom: 160%
 								p
 									font-size: 16px
 									font-weight: bold
 									text-transform: uppercase
 									color: #f2f5b3
-							.price-text
-								margin-left: 33%
+							.price-text	
+								position: absolute
 								right: 0
 								font-weight: bold
 								text-transform: uppercase
 								color: #0d9344
 								font-size: 18px
-								span
-									font-size: 42px
+								bottom: 60%
 							button
-								border-radius: 10px
+								right: 0	
+								border-radius: 10px/7px
 								background-color: #0663b1
 								width: 238px
 								height: 46px
@@ -223,6 +226,7 @@ body
 				font-size: 20px
 				text-transform: uppercase
 				color: #f2f5b3	
+				margin-bottom: 10%
 		.container-certificates
 			.intro
 				font-size: 32px
@@ -273,7 +277,7 @@ body
 		padding-bottom: -50%		
 		.container-gallery
 			margin: 0 auto
-			max-width: 1200px
+			min-width: 1200px
 			position: relative
 			.container
 				z-index: 3
@@ -313,7 +317,7 @@ body
 				.gallery
 					text-align: center
 					z-index: 2
-					max-width: 1200px
+					min-width: 1200px
 					img
 						display: inline-block
 						width: 220px
